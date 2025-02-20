@@ -54,7 +54,7 @@ A seção abaixo foi adicionada para caso queira verificar algum conteúdo de es
 :---------: | :------:
 **HTML** | <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">HTML Semantic Elements</a>
 **CSS: media queries** | <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_media_queries/Using_media_queries">Usando Media Queries</a>
-<!-- **roadmap.sh** | O link sobre como fazer o projeto pode ser encontrado <a href="https://roadmap.sh/projects/single-page-cv">aqui</a> -->
+**roadmap.sh** | O link sobre como fazer o projeto pode ser encontrado <a href="https://roadmap.sh/projects/basic-html-website">aqui</a>
 
 <h1 id="credits"> Créditos </h1>
 
