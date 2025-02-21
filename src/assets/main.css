@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+
+    font-family: var(--mainFont);
+}
+
+:root {
+    /* Colors */
+    --primary: #171717;
+    --secondary: #ededed;
+    --tertiary: #ababab;
+    --quaternary: #1717e8;
+    --bgColor: #cccccc;
+
+    /* Measures */
+    --mainMeasure: 1em;
+    --secMeasure: 2em;
+    --rdMeasure: 0.5em;
+    --thMeasure: 0.2em;
+    --fontSizeTitle: 1.3em;
+    --fontSizeParagraph: 1.1em;
+
+    /* FONTS */
+    --mainFont: "Lato", serif;
+}
+
+/* body {} */
+
+/* -------------------------------------------------------------------- */
+
+/* HEADER */
+header {
+    padding: var(--mainMeasure);
+}
+
+@media (min-width: 1024px) {
+    header {
+        min-height: 40vh;
+    }
+}
+
+/* .container-nav-flexbox-mediaQuery {} */
+
+@media (min-width: 1024px) {
+    .container-nav-flexbox-mediaQuery {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.container-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* @media (min-width: 1024px) {
+    .container-logo {
+        display: flex;
+        flex-direction: row;
+    }
+} */
+
+.container-logo .logo {
+    width: var(--secMeasure);
+}
+.container-logo .name-home-link {
+    color: var(--primary);
+}
+
+/* @media (min-width: 1024px) {
+    .name-home-link {
+        margin-left: var(--rdMeasure);
+    }
+} */
+
+.menu-options {
+    display: flex;
+    justify-content: center;
+    
+    padding: var(--mainMeasure);
+    
+    font-weight: 300;
+}
+
+.menu-options li .links {
+    color: var(--primary);
+}
+
+.menu-options span {
+    margin: 0 var(--thMeasure) 0 var(--thMeasure);
+}
+
+/* -------------------------------------------------------------------- */
+
+/* HERO */
+.container-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* @media (min-width: 1024px) {
+    .container-hero {
+        display: flex;
+        justify-content: center;
+        
+        min-height: 30vh;
+    }
+} */
+
+.container-hero .hero-desc {
+    font-weight: 300;
+    color: var(--tertiary);
+}
+
+/* -------------------------------------------------------------------- */
+
+/* MAIN */
+
+/* LEFT SIDE (MEDIA QUERY) */
+/* main {} */
+
+#left-side, #center, #review {
+    text-align: center;
+}
+
+.left-side-title, .center-title, .review-title {
+    font-weight: 700;
+    margin-bottom: var(--rdMeasure);
+    font-size: var(--fontSizeTitle);
+}
+
+/* .left-side-project-list {} */
+
+.left-side-project-list .left-side-list {
+    padding: .3em;
+    background-color: var(--bgColor);
+    border-top: .01em solid var(--primary);
+    border-bottom: .01em solid var(--primary);
+}
+
+.left-side-project-list .left-side-list a {
+    color: var(--primary);
+}
+
+/* CENTER SIDE (MEDIA QUERY) */
+.top-section, .bottom-section {
+    text-align: left;
+}
+
+.top-section .center-title {
+    text-align: center;
+    margin-top: var(--rdMeasure);
+}
+
+.container-xp {
+    border: .01em solid var(--primary);
+    background-color: var(--bgColor);
+    padding: var(--mainMeasure);
+}
+
+.container-xp .xp-location-title {
+    font-weight: 300;
+    margin-bottom: var(--rdMeasure);
+}
+
+.container-xp .desc-xp {
+    margin-bottom: var(--thMeasure);
+}
+
+.container-xp .visit-link {
+    color: var(--quaternary);
+}
+
+/* RIGHT SIDE (MEDIA QUERY) */
+#right-side {
+    border: .01em solid var(--primary);
+    padding: var(--mainMeasure);
+}
+
+#right-side .bottom-section-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: var(--fontSizeTitle);
+    margin: 0 0 var(--rdMeasure) 0;
+}
+
+#right-side .bottom-section-desc {
+    margin-bottom: var(--rdMeasure);
+}
+
+#right-side ul {
+    margin-top: var(--rdMeasure);
+}
+
+
+/* TESTIMONIALS */
+#review .review-title {
+    margin-top: var(--rdMeasure);
+}
+
+@media (min-width: 1024px) {
+    .container-grid-mediaQuery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.container-professors-testimonial {
+    text-align: left;
+    padding: var(--mainMeasure);
+}
+
+.container-professors-testimonial:nth-child(2),
+.container-professors-testimonial:nth-child(3) {
+    display: none;
+}
+/* 
+@media (min-width: 1024px) {
+    .container-professors-testimonial:nth-child(2), 
+    .container-professors-testimonial:nth-child(3) {
+        display: grid;
+    }
+} */
+
+.container-person {
+    color: var(--tertiary);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+}
+footer .copyright {}
+
+/* OTHERS */
+.links:hover {
+    font-weight: 500;
+}
+
+hr {
+    margin: var(--rdMeasure);
+}

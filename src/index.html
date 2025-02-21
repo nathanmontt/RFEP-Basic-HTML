@@ -21,33 +21,34 @@
     <meta http-equiv="content-type" content="text/html">
 
     <!-- <link rel="shortcut icon" href="assets/icons/favicons/article_favicon.png" type="image/x-icon"> -->
-    <!-- <link rel="stylesheet" href="assets/style/main.css"> -->
+    <link rel="stylesheet" href="assets/main.css">
 
-    <title>roadmap - Single-Page CV</title>
+    <title>roadmap - Personal Portfolio</title>
 </head>
 <body>
     <header>
-        <div class="container-nav-flexbox">
+        <div class="container-nav-flexbox-mediaQuery">
             <div class="container-logo">
-                <img src="#" alt="Some icon to represent a logo" class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#000000" class="logo"><path d="M120-120v-720h720v720H120Zm80-80h560v-560H200v560Zm0 0v-560 560Z"/></svg>
                 <a href="index.html" class="name-home-link">Nathan Monteiro</a>
             </div>
 
             <nav>
                 <ul class="menu-options">
-                    <li><a href="#" class="links">Home</a></li>
-                    <li><a href="#" class="links">Projects</a></li>
-                    <li><a href="#" class="links">Articles</a></li>
-                    <li><a href="#" class="links">Contact</a></li>
+                    <li><a href="#" class="links">Home</a><span>/</span></li>
+                    <li><a href="#" class="links">Projects</a><span>/</span></li>
+                    <li><a href="#" class="links">Articles</a><span>/</span></li>
+                    <li><a href="#" class="links">Contact</a> </li>
                 </ul>
             </nav>
         </div>
-
-        <div class="container-bgImg">
+        <div class="container-hero">
             <h3 class="hero-title">Frontend Developer</h3>
             <p class="hero-desc">html only with proper layout, no styling</p>
         </div>
     </header>
+    
+    <hr>
 
     <main>
         <section id="left-side">
@@ -94,33 +95,35 @@
             </ul>
         </section>
 
-        <seciton class="review">
+        <seciton id="review">
             <p class="review-title">Review from my professors</p>
-                <div class="container-professors-testimonial">
-                    <p class="testimonial">Nathan was a brilliant student; always stood out with his assignments.</p>
-                    <div class="container-person">
-                        <p class="name">John Doe</p>
-                        <p class="occupation">Assistant Professor</p>
+                <div class="container-grid-mediaQuery">
+                    <div class="container-professors-testimonial">
+                        <p class="testimonial">Nathan was a brilliant student; always stood out with his assignments.</p>
+                        <div class="container-person">
+                            <p class="name">John Doe</p>
+                            <p class="occupation">Assistant Professor</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="container-professors-testimonial">
-                    <p class="testimonial">Nathan was a brilliant student; always stood out with his assignments.</p>
-                    <div class="container-person">
-                        <p class="name">John Doe</p>
-                        <p class="occupation">Assistant Professor</p>
+                    
+                    <div class="container-professors-testimonial">
+                        <p class="testimonial">Nathan was a brilliant student; always stood out with his assignments.</p>
+                        <div class="container-person">
+                            <p class="name">John Doe</p>
+                            <p class="occupation">Assistant Professor</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="container-professors-testimonial">
-                    <p class="testimonial">Nathan was a brilliant student; always stood out with his assignments.</p>
-                    <div class="container-person">
-                        <p class="name">John Doe</p>
-                        <p class="occupation">Assistant Professor</p>
+                    
+                    <div class="container-professors-testimonial">
+                        <p class="testimonial">Nathan was a brilliant student; always stood out with his assignments.</p>
+                        <div class="container-person">
+                            <p class="name">John Doe</p>
+                            <p class="occupation">Assistant Professor</p>
+                        </div>
                     </div>
                 </div>
         </seciton>
     </main>
 
-    <footer>&copy; all rights reserved 2025</footer>
+    <footer><p class="copyright">&copy; all rights reserved 2025</p></footer>
 </body>
